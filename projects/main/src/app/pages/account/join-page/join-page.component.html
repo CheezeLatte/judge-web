@@ -1,1 +1,26 @@
 <p>join-page works!</p>
+  <form [formGroup]='joinForm' (ngSubmit)='onSubmit(joinForm.value)'>
+  <div class = 'id'>
+    <label for="id"></label>
+    <input id="id" value = '아이디'  type="text" formControlName="id">
+  </div>
+  <div class='passwordSpace'>
+    <span class = 'password'>
+      <label for="password"></label>
+      <input id="password" value = '비밀번호'  type="text" formControlName="password">
+    </span>
+    <span class = 'confirmPassword'>
+      <label for="confirmPassword"></label>
+      <input id="confirmPassword" value = '비밀번호 확인'  type="text" formControlName="confirmPassword">
+    </span>
+  </div>
+  <div class = 'name'>
+    <label for="name"></label>
+    <input id="name" value = '성명'  type="text" formControlName="name">
+  </div>
+  <div class = 'gradeNum'>
+    <label for="id"></label>
+    <input id="id" value = '아이디'  type="text" formControlName="id">
+  </div>
+  <button class="button" type="submit">가입</button>
+</form>
