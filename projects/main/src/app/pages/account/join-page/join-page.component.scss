@@ -1,16 +1,73 @@
-.example-container{
-  text-align: center;
+.join-container{
+  border: solid 1px;
+  width: 500px;
+  height: auto;
+  border-color:rgb(203, 208, 209);
+  margin: auto;
+  box-shadow: 0px 0px 10px rgb(170, 174, 175);
+}
+
+.name{
+  margin-top: 30px;
+  width: 400px;
+  margin-left: 50px;
+  border-bottom: solid 1px rgb(170, 174, 175);
 }
 
 .form-container{
-  width: 40px;
+  width: 400px;
   margin: auto;
-  margin-top: 100px
+  margin-top: 30px
 }
+
+input{
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+  width: 392px;
+  height: 40px;
+  font-size: 100%;
+  padding-left: 8px;
+  border-radius: 7px;
+}
+
+input:focus{
+  box-shadow:0px 0px 10px rgb(170, 174, 175);
+  outline: transparent;
+
+}
+
 .form-field{
-  margin-top:20px;
+  width: 400px;
+  border: solid 1px;
+  border-color:rgb(111, 115, 116);
+  border-radius: 7px;
+  margin-top: 1px;
 }
+
 .button{
-  margin-top: 20px;
-  position: relative;
+  margin-top: 35px;
+  width: 75px;
+  height: 35px;
+  margin-left: 325px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  background-color: rgb(129, 104, 243);
+  border-radius: 5px;
+  border-color: transparent;
+  color:rgb(255, 255, 255);
+}
+
+button:focus{
+  outline: transparent;
+  box-shadow:0px 0px 10px rgb(170, 174, 175);
+}
+
+.message{
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.wrapper{
+  height: 750px;
 }

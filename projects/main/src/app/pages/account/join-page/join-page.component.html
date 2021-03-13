@@ -1,27 +1,45 @@
-<div class="example-container">
-  <div class="form-container">
-    <form [formGroup]='joinForm' (ngSubmit)='onSubmit(joinForm.value)'>
-      <div class="form-field">
-        <label for="id"></label>
-        <input id="id" value = '아이디'  type="text" formControlName="id">
-      </div>
-      <div class="form-field">
-        <label for="password"></label>
-        <input id="password" value = '비밀번호'  type="text" formControlName="password">
-      </div>
-      <div class="form-field">
-        <label for="confirmPassword"></label>
-        <input id="confirmPassword" value = '비밀번호 확인'  type="text" formControlName="confirmPassword">
+<body class="wrapper">
+  <div class="join-container">
+    <h2 class="name">회원가입</h2>
+    <div class="form-container">
+      <form [formGroup]='joinForm' (ngSubmit)='onSubmit(joinForm.value)'>
+        <p class="message">아이디</p>
+        <div class="form-field">
+          <label for="id"></label>
+          <input id="id" type="text" formControlName="id">
         </div>
-      <div class="form-field">
-        <label for="name"></label>
-        <input id="name" value = '성명'  type="text" formControlName="name">
-      </div>
-      <div class="form-field">
-        <label for="id"></label>
-        <input id="id" value = '아이디'  type="text" formControlName="id">
-      </div>
-      <button class="button" type="submit">가입</button>
-    </form>
+        <p class="message">비밀번호</p>
+        <div class="form-field">
+          <label for="password"></label>
+          <input id="password" type="password" formControlName="password">
+        </div>
+        <p class="message">비밀번호 확인</p>
+        <div class="form-field">
+          <label for="confirmPassword"></label>
+          <input id="confirmPassword" type="password" formControlName="confirmPassword">
+          </div>
+          <p class="message">이름</p>
+        <div class="form-field">
+          <label for="name"></label>
+          <input id="name" type="text" formControlName="name">
+        </div>
+        <p class="message">학번</p>
+        <div class="form-field">
+          <label for="gradeNum"></label>
+          <input id="gradeNum" type="text" formControlName="gradeNum">
+        </div>
+        <p class="message">소속</p>
+        <div class="form-field">
+          <label for="affiliation"></label>
+          <input id="affiliation" type="text" formControlName="affiliation">
+        </div>
+        <p class="message">E-mail</p>
+        <div class="form-field">
+          <label for="email"></label>
+          <input id="email" type="text" formControlName="email">
+        </div>
+        <button class="button" type="submit">회원가입</button>
+      </form>
+    </div>
   </div>
-</div>
+</body>
